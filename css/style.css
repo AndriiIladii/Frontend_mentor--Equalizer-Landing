@@ -1,0 +1,248 @@
+:root {
+  --turquoise: rgb(102, 226, 220);
+  --blood-orange: rgb(250, 116, 83);
+  --orange: rgb(255, 185, 100);
+  --gray-white: rgb(252, 250, 249);
+  --dark-navy: rgb(25, 24, 38);
+  --container-width: 1140px;
+  --container-width_tablet: 726px;
+  --container-width_mobile: 357px;
+  --container-padding: 0 15px;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--gray-white);
+  background-image: url(../assets/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-position: left -290px top -262px;
+  min-height: 100vh;
+  color: var(--dark-navy);
+  z-index: 2;
+}
+
+.container {
+  width: var(--container-width);
+  padding: var(--container-padding);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 15px 76.5px 14px 101.5px;
+  display: inline-block;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  position: relative;
+}
+
+.android {
+  background-color: var(--gray-white);
+  transition: all 0.2s ease;
+  color: var(--dark-navy);
+}
+
+.android:hover {
+  background-color: var(--orange);
+}
+
+.android:before {
+  content: "";
+  background-image: url(../assets/icon-android.svg);
+  width: 17px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 77px;
+}
+
+.apple {
+  background-color: var(--dark-navy);
+  color: #fff;
+  transition: all 0.2s ease;
+  padding: 15px 95px 14px 121px;
+  margin-bottom: 16px;
+}
+
+.apple:hover {
+  background-color: var(--turquoise);
+}
+
+.apple:before {
+  content: "";
+  background-image: url(../assets/icon-apple.svg);
+  width: 17px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 97px;
+}
+
+/* HEADER */
+
+#header {
+  margin-top: 61.99px;
+  position: relative;
+}
+
+#header::after {
+  content: "";
+  background-image: url(../assets/bg-pattern-1.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  top: -102px;
+  right: 0;
+  width: 312px;
+  height: 468px;
+  z-index: -1;
+}
+
+.header_content {
+  margin-top: 127.01px;
+}
+
+.header_title {
+  margin-bottom: 40px;
+  max-width: 1015px;
+}
+
+.header_text {
+  max-width: 825px;
+}
+
+/* MAIN */
+
+#main {
+  margin-top: 320px;
+}
+
+.main_row {
+  background-color: var(--dark-navy);
+  background-image: url(../assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: left 336px top -40px;
+  border-radius: 12px;
+  height: 600px;
+  position: relative;
+}
+
+.main_row::before {
+  content: "";
+  background-image: url(../assets/illustration-app.png);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -214px;
+  left: 102px;
+  width: 312px;
+  height: 642px;
+}
+
+.main_card {
+  padding: 58px 59px 48px 54px;
+  background-color: var(--blood-orange);
+  width: 446px;
+  height: 625px;
+  position: absolute;
+  border-radius: 12px;
+  bottom: -114px;
+  right: 95px;
+  color: var(--gray-white);
+}
+
+.card_title {
+  margin-bottom: 22px;
+}
+
+.card_text {
+  margin-bottom: 39px;
+}
+
+.card_price {
+  margin-bottom: 46px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  align-self: center;
+}
+
+.card_price span {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 52px;
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+/* FOOTER */
+
+#footer {
+  margin-top: 202px;
+  padding-bottom: 91px;
+}
+
+.footer_content {
+  display: flex;
+  column-gap: 137.76px;
+}
+
+.footer_text {
+  max-width: 366px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.footer_text a {
+  font-weight: 700;
+  color: var(--dark-navy);
+}
+
+.footer_social {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  margin-left: 222px;
+}
+
+.path {
+  transition: all 0.2s ease;
+}
+
+.path:hover {
+  filter: brightness(0) saturate(100%) invert(73%) sepia(36%) saturate(635%)
+    hue-rotate(343deg) brightness(99%) contrast(106%);
+}
